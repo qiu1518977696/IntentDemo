@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="50px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原价"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/et_jg"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="50px">
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_15"
+            android:text="1.5倍："/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_17"
+            android:text="最终价格："/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="50px">
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_2"
+            android:text="2倍："/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:id="@+id/tv_27"
+            android:text="最终价格："/>
+    </LinearLayout>
+
+</LinearLayout>
