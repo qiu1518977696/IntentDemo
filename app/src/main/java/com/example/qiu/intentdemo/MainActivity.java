@@ -1,6 +1,7 @@
 package com.example.qiu.intentdemo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -37,6 +38,8 @@ private EditText et_name,et_pass;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent=getIntent();
+
         et_name=(EditText)findViewById(R.id.et_name);
         et_pass=(EditText)findViewById(R.id.et_pass);
         bt_login=(Button)findViewById(R.id.bt_login);
@@ -45,7 +48,7 @@ private EditText et_name,et_pass;
         bt_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url="http://192.168.56.1:8080/intentDemo/servlet/JsonDemo";
+                String url="http://172.20.10.9:8080/intentDemo/servlet/JsonDemo";
                 String name=et_name.getText().toString();
                 String pass=et_pass.getText().toString();
                 //new HttpLoginThred(name,pass,url).start();
